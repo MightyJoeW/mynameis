@@ -33,3 +33,17 @@ span,
   transition: all 2s;
   text-align: center;
 }
+
+.buttons-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 100px);
+  justify-content: center;
+}
+
+@media (max-width: 450px) {
+  .buttons-wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
